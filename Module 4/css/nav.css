@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 10px;
+    padding: 10px;
+    position: relative; /* Added */
+}
+
+nav li:hover {
+    background-color: rgb(230, 230, 230);
+    border-radius: 4px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+}
+
+/* dropdown menu style */
+nav li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the dropdown below the parent li */
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+nav li:hover >.dropdown {
+    display: block; /* Show the dropdown when hovering over the parent li */
+}
+

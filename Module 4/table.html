@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
     <style>
         table,
         th,
@@ -25,15 +26,34 @@
         td {
             text-align: center;
         }
-        table{
+
+        table {
             border-collapse: collapse;
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li>
+                    <a href="table.html">Table</a>
+                    <ul class="dropdown">
+                        <li><a href="video.html">Video</a></li>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1>Table</h1>
     <table>
+        <caption>Info Table</caption>
         <thead>
             <tr>
                 <th>ID</th>

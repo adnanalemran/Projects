@@ -1,16 +1,4 @@
-* {
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-}
 
-nav>ul>li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav>ul>li>a {
-    text-decoration: none;
-}
 footer{
     text-align: center;
     margin-top: 15px;
