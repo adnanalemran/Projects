@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .food img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .food {
+            border: 1px solid indianred;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media screen and (min-width:576px) and (max-width:768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="images/car.jpg" alt="">
+            <h3>Car item - 1</h3>
+            <p>price : $0000Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum sapiente, distinctio harum
+                unde eligendi ab illum? Quia impedit ab asperiores?</p>
+            <button>buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/car.jpg" alt="">
+            <h3>Car item - 2</h3>
+            <p>price : $0000Itaque nulla suscipit, blanditiis eligendi nobis molestias, libero quam eius sunt aspernatur
+                excepturi modi ea corporis doloribus, beatae vero? Numquam?</p>
+            <button>buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/car.jpg" alt="">
+            <h3>Car item - 3</h3>
+            <p>price : $0000Fugiat excepturi nam vitae magnam dignissimos pariatur quae consectetur nihil soluta vero
+                provident perspiciatis asperiores quam magni, debitis perferendis enim.</p>
+            <button>buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/car.jpg" alt="">
+            <h3>Car item - 4</h3>
+            <p>price : $0000Qui veniam impedit temporibus culpa excepturi illo atque quasi ullam vel. Officiis
+                voluptatum beatae sapiente quidem magnam reprehenderit, totam ipsa!</p>
+            <button>buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/car.jpg" alt="">
+            <h3>Car item - 5</h3>
+            <p>price : $0000Velit accusamus sint tempore, nostrum voluptatibus ducimus expedita nam natus incidunt
+                optio, dignissimos, earum labore ab! Voluptatum molestias doloribus aliquam.</p>
+            <button>buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/car.jpg" alt="">
+            <h3>Car item - 6</h3>
+            <p>price : $0000Eos eaque commodi ad ducimus vero adipisci consectetur, odio veniam, ipsa fugiat vel,
+                voluptas voluptatum assumenda atque doloremque quae laudantium.</p>
+            <button>buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/car.jpg" alt="">
+            <h3>Car item - 7</h3>
+            <p>price : $0000Possimus, quia impedit! Ut sunt tenetur officiis voluptates facere nesciunt, mollitia eum
+                sequi saepe, consequatur ipsa non quo! Perferendis, fugiat.</p>
+            <button>buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/car.jpg" alt="">
+            <h3>Car item - 8</h3>
+            <p>price : $0000Fuga, quasi omnis earum rerum officia ullam non doloremque laborum nesciunt blanditiis
+                nostrum quas exercitationem id qui, tempore quibusdam reiciendis?</p>
+            <button>buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/car.jpg" alt="">
+            <h3>Car item - 9</h3>
+            <p>price : $0000Adipisci suscipit sint dolores ex asperiores laudantium dolor atque? Tempora accusantium
+                dolorem in corporis. Tenetur ea enim quos voluptates facilis!</p>
+            <button>buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/car.jpg" alt="">
+            <h3>Car item - 10</h3>
+            <p>price : $0000Ratione inventore voluptatibus maxime minima deserunt rerum voluptate, repellat quo,
+                laboriosam non tenetur harum? Vero quas repellat aliquid odit hic?</p>
+            <button>buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/car.jpg" alt="">
+            <h3>Car item - 11</h3>
+            <p>price : $0000Officia nulla dignissimos assumenda quos qui! Cum, aliquam perspiciatis! Soluta quis fugiat,
+                neque beatae a ut aspernatur delectus quia necessitatibus.</p>
+            <button>buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/car.jpg" alt="">
+            <h3>Car item - 12</h3>
+            <p>price : $0000Sed praesentium in, harum possimus ipsa hic fugiat reiciendis optio excepturi id laudantium
+                suscipit, culpa omnis placeat beatae soluta nesciunt!</p>
+            <button>buy Now</button>
+        </div>
+    </div>
+</body>
+
+</html>
