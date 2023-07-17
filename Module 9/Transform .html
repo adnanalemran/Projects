@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform </title>
     <style>
-        body{
-            margin-right: -50px;
+        .room {
             display: flex;
+            justify-content: space-around;
+        
         }
+
+        .title {
+            text-align: center;
+            display: block;
+        }
+
         .container,
         .inner {
             width: 200px;
@@ -20,6 +27,7 @@
         .container {
             border: 1px solid purple;
             background-color: aquamarine;
+            
         }
 
         .inner {
@@ -27,26 +35,44 @@
             background-color: paleturquoise;
             /* transform: scale(0.25, 0.5); */
             /* transform: scale(0.5) rotate(45deg) translateX(100px); */
-            /* transform: translateX(30px) scale(0.60) rotate(70deg); */  }
-        .inner:hover{
+            /* transform: translateX(30px) scale(0.60) rotate(70deg); */
+        }
+
+        .inner:hover {
             transform: translateX(30px) scale(0.60) rotate(70deg);
             transition: .5s;
+            background-color: salmon;
         }
-      
+
+        @media screen and (max-width: 400px) {
+            .room {
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .container {
+                margin: 20px;
+
+            }
+        }
+
     </style>
 </head>
 
 <body>
-    <h2>Transform </h2>
-    <div class="container">
-        <div class="inner">inner 1</div>
-    </div>
-    <div class="container">
-        <div class="inner">inner 2</div>
-    </div>
-    <div class="container">
-        <div class="inner">inner 3</div>
-    </div>
+    <h2 class="title">Transform </h2>
+    <section class="room">
+
+        <div class="container">
+            <div class="inner">inner 1</div>
+        </div>
+        <div class="container">
+            <div class="inner">inner 2</div>
+        </div>
+        <div class="container">
+            <div class="inner">inner 3</div>
+        </div>
+    </section>
 </body>
 
 </html>
