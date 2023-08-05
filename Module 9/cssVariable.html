@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        :root {
+            --primary-color: pink;
+            --secondary-color: gray;
+            --font-size: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+
+        }
+
+        h5 {
+            background-color: var(--primary-color);
+        }
+
+        .box {
+            border: 2px solid --primary-color;
+            font-size: var(--font-size);
+            width: calc(100% - 300px);
+        }
+
+        .box p {
+            color: var(--secondary-color);
+        }
+        .sidebar{
+            background-color: lightblue;
+        }
+        .content{
+            background-color: lightcoral;
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-rows: 500px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My custom properties </h1>
+    <h5>Al so Commonly known as a variable</h5>
+    <div class="box">
+        <h3>i am doing smutting</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint velit nostrum fuga est laboriosam vero
+            expedita excepturi, beatae molestias necessitatibus repellendus ducimus voluptates eaque! Optio sed incidunt
+            natus accusantium similique!</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Main content</div>
+    </div>
+</body>
+
+</html>
