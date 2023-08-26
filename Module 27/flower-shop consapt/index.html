@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="bn" id="main-html" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower shop</title>
+
+    <link rel="stylesheet" href="rippleUI.css" />
+    <script src="tailwindcss.js"></script>
+    <style>
+      img {
+        height: 200px !important;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="theme()" class="btn-secondary btn">
+      theme
+    </button>
+    <h1 class="text-4xl font-extrabold text-center pt-6">Flower shop</h1>
+    <section class="mx-auto flex mt-11 gap-5 p-5">
+      <div class="container w-9/12 flex gap-4">
+        <div class="card card-image-cover w-full h-28">
+          <img class="h-full" src="images/1.jpeg" alt="" />
+          <div class="card-body shadow-xl rounded-lg">
+            <h2 class="card-header">Rose</h2>
+            <p class="text-content2">price: 100 taka</p>
+            <div class="card-footer">
+              <button onclick="addcard(this)" class="btn-secondary btn">
+                Add to Card
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-image-cover w-full h-28">
+          <img src="images/2.jpg" alt="" />
+          <div class="card-body shadow-xl rounded-lg">
+            <h2 class="card-header">dahlia</h2>
+            <p class="text-content2">price: 180 taka</p>
+            <div class="card-footer">
+              <button onclick="addcard(this)" class="btn-secondary btn">
+                Add to Card
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-image-cover w-full h-28">
+          <img class="h-20 object-fill" src="images/3.jfif" alt="" />
+          <div class="card-body shadow-xl rounded-lg">
+            <h2 class="card-header">Carnation</h2>
+            <p class="text-content2">price: 120 taka</p>
+            <div class="card-footer">
+              <button onclick="addcard(this)" class="btn-secondary btn">
+                Add to Card
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-3/12">
+        <div class="card">
+          <div class="card-body shadow-xl rounded-lg">
+            <h2 class="card-header">Cart</h2>
+            <p class="text-content2 font-bold">Item</p>
+            <hr />
+            <div id="cart-list" class="list"></div>
+
+            <div class="card-footer">
+              <p>Total: <span id="total-price">00</span></p>
+              <br />
+              <button class="btn-secondary btn">buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/flower-shop.js"></script>
+  </body>
+</html>

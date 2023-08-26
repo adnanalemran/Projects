@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="bumblebee">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>বাপের ব্যাংক</title>
+  <link href="daisyui.css" rel="stylesheet" type="text/css" />
+  <script src="tailwindcss.js"></script>
+  <style>
+    @font-face {
+      font-family: myfont;
+      src: url(my-font.ttf);
+    }
+
+    body {
+      /* font-family: myfont, Arial, sans-serif; */
+      height: 100%;
+    }
+
+  </style>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 pb-32">
+  <section class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-center font-bold text-3xl md:text-5xl text-blue-600 dark:text-yellow-50 py-8 md:py-12">
+      বাপের ব্যাংকে আপনাকে স্বাগতম
+    </h1>
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="card flex-1 p-6 bg-green-100 shadow-md dark:bg-gray-700">
+        <div class="card-body">
+          <h2 class="card-title text-2xl md:text-3xl text-green-600 dark:text-green-400" id="deposit-total">00</h2>
+          <p class="text-xl text-gray-600 dark:text-gray-400">জমা টাকা</p>
+        </div>
+      </div>
+      <div class="card flex-1 p-6 bg-red-100 shadow-md dark:bg-gray-700">
+        <div class="card-body">
+          <h2 class="card-title text-2xl md:text-3xl text-red-600 dark:text-red-400" id="withdrow-total">00</h2>
+          <p class="text-xl text-gray-600 dark:text-gray-400">উত্তোলন টাকা</p>
+        </div>
+      </div>
+      <div class="card flex-1 p-6 bg-blue-100 shadow-md dark:bg-gray-700">
+        <div class="card-body">
+          <h2 class="card-title text-2xl md:text-3xl text-blue-600 dark:text-blue-400" id="balance-total">1000</h2>
+          <p class="text-xl text-gray-600 dark:text-gray-400">মোট টাকা</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row gap-4 my-4">
+      <div class="card flex-1 p-6 bg-green-100 shadow-md dark:bg-gray-700">
+        <div class="card-body">
+          <h2 class="card-title  text-xl md:text-2xl font-thin text-green-600 dark:text-green-400">টাকা জমা করুন</h2>
+          <input
+            id="deposit-field"
+            type="text"
+            placeholder="পরিমাণ লিখুন"
+            class="input input-bordered w-full text-base md:text-xl dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+          />
+          <div class="card-actions mt-4">
+            <button id="btn-deposit" class="btn w-full text-base md:text-xl bg-primary-600 hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-700">জমা</button>
+          </div>
+        </div>
+      </div>
+      <div class="card flex-1 p-6 bg-red-100 shadow-md dark:bg-gray-700">
+        <div class="card-body">
+          <h2 class="card-title text-xl md:text-2xl font-thin text-red-600 dark:text-red-400">টাকা উত্তোলন করুন</h2>
+          <input
+            id="withdrow-field"
+            type="text"
+            placeholder="পরিমাণ লিখুন"
+            class="input input-bordered w-full text-base md:text-xl dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+          />
+          <div class="card-actions mt-4">
+            <button class="btn w-full text-base md:text-xl bg-primary-600 hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-700" id="btn-withdrow">উত্তোলন</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/uitilites.js"></script>
+  <script src="js/deposit.js"></script>
+  <script src="js/withdrow.js"></script>
+
+</body>
+
+</html>

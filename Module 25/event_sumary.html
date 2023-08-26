@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final DOM</title>
+  </head>
+  <body>
+    <h1>Final DOM Event Handlers</h1>
+    <h3 id="handler-status">Default Text</h3>
+    <button onclick="hendelOncLick()">
+      handel event Add on clink Function
+    </button>
+    <br />
+    <br />
+    <button id="eventLisner">Handle event by addEvent lister</button>
+
+    <br />
+    <br />
+    <h4 id="stutas-text">Text</h4>
+ 
+    <input type="text" id="text_box" name="" id="" />
+
+    <button onclick="textReplace()">replace</button>
+
+    <script>
+        function textReplace (){
+            let textBox = document.getElementById ('text_box');
+            
+            const sText = document.getElementById('stutas-text');
+            sText.innerText = textBox.value ;
+            textBox.value = '';
+        }
+
+
+
+      function hendelOncLick() {
+        const handlerStatus = document.getElementById("handler-status");
+        handlerStatus.innerText = "handel by function";
+      }
+
+      document
+        .getElementById("eventLisner")
+        .addEventListener("click", function () {
+          const handlerStatus = document.getElementById("handler-status");
+          handlerStatus.innerText = "handel by eventLisner ";
+        });
+    </script>
+  </body>
+</html>
